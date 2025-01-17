@@ -1,8 +1,11 @@
 ![logo](https://github.com/Shaheer-star/Shaheer-star/blob/main/Black%20and%20White%20Creative%20Profile%20Information%20LinkedIn%20Article%20Cover%20Image.png)
 
+
 <h1 align="center">Hi 👋, I'm Syed Shaheer Abbas</h1>
 <h3 align="center">A passionate Data Science and Machine Learner from Pakistan</h3>
+
 <img align="right" alt="coding" width="400" src="https://media2.giphy.com/media/2IudUHdI075HL02Pkk/giphy.gif?cid=6c09b952673tgvsiii3b3sbnojk6se54s0tyay6ne951t97i&ep=v1_gifs_search&rid=giphy.gif&ct=g">
+
 
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=shaheer-star&label=Profile%20views&color=0e75b6&style=flat" alt="shaheer-star" /> </p>
@@ -19,11 +22,12 @@
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
-<a href="https://linkedin.com/in/syed shaheer abbas" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="syed shaheer abbas" height="30" width="40" /></a>
-<a href="https://kaggle.com/shaheer._sh" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg" alt="shaheer._sh" height="30" width="40" /></a>
+<a href="https://linkedin.com/in/https://www.linkedin.com/in/syed-shaheer-abbas-69b20533b/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/syed-shaheer-abbas-69b20533b/" height="30" width="40" /></a>
+<a href="https://kaggle.com/https://www.kaggle.com/shaheersh" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg" alt="https://www.kaggle.com/shaheersh" height="30" width="40" /></a>
 <a href="https://fb.com/shaheer abbas sherazi" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="shaheer abbas sherazi" height="30" width="40" /></a>
 <a href="https://instagram.com/shaheer._.sh" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="shaheer._.sh" height="30" width="40" /></a>
-<a href="https://medium.com/@syed shaheer sherazi" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg" alt="@syed shaheer sherazi" height="30" width="40" /></a>
+<a href="https://medium.com/@https://medium.com/@sherry.ign000" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg" alt="@https://medium.com/@sherry.ign000" height="30" width="40" /></a>
+<a href="https://www.leetcode.com/https://leetcode.com/u/shaheer_sh/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="https://leetcode.com/u/shaheer_sh/" height="30" width="40" /></a>
 </p>
 
 <h3 align="left">Languages and Tools:</h3>
