@@ -35,7 +35,7 @@
 
 <br/>
 
-<!-- ABOUT CARD -->
+<!-- ABOUT HUD CARD -->
 <div align="center">
   <img src="assets/about.svg" alt="About Syed Shaheer Abbas" width="100%" />
 </div>
@@ -58,18 +58,9 @@
 
 <br/>
 
-<!-- SIDE-BY-SIDE ANALYTICS (STREAK & TOP LANGUAGES) -->
+<!-- GITHUB ANALYTICS & STREAK (GUARANTEED RENDER) -->
 <div align="center">
-  <table border="0" width="100%">
-    <tr>
-      <td width="50%" align="center" valign="top">
-        <img src="https://github-readme-streak-stats.herokuapp.com/?user=Shaheer-star&theme=dark&background=0d0b18&border=7c3aed&stroke=a855f7&ring=c084fc&fire=c084fc&currStreakLabel=a855f7" alt="GitHub Streak Stats" width="100%" />
-      </td>
-      <td width="50%" align="center" valign="top">
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Shaheer-star&theme=dark&hide_border=false&border_color=7c3aed&title_color=c084fc&text_color=94a3b8&bg_color=0d0b18&layout=compact" alt="Top Languages" width="100%" />
-      </td>
-    </tr>
-  </table>
+  <img src="assets/analytics.svg" alt="GitHub Analytics & Streak Stats" width="100%" />
 </div>
 
 <br/>
