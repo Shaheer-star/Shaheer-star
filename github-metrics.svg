@@ -1,0 +1,139 @@
+<svg width="800" height="420" viewBox="0 0 800 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="mBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c0a15"/>
+      <stop offset="100%" stop-color="#120e24"/>
+    </linearGradient>
+    <linearGradient id="mBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="pyGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="cppGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#f472b6"/>
+    </linearGradient>
+    <linearGradient id="jsGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#eab308"/>
+      <stop offset="100%" stop-color="#fde047"/>
+    </linearGradient>
+    <linearGradient id="tsGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=JetBrains+Mono:wght@500;700&amp;display=swap');
+      .m-title { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 18px; fill: #f3e8ff; }
+      .m-sub { font-family: 'JetBrains Mono', monospace; font-size: 12px; fill: #a855f7; letter-spacing: 1px; }
+      .m-label { font-family: 'Inter', sans-serif; font-size: 13px; fill: #94a3b8; }
+      .m-val { font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 15px; fill: #f8fafc; }
+      .m-stat-title { font-family: 'JetBrains Mono', monospace; font-size: 11px; fill: #64748b; letter-spacing: 1px; }
+    </style>
+  </defs>
+
+  <!-- Card Background -->
+  <rect width="800" height="420" rx="16" fill="url(#mBg)" stroke="url(#mBorder)" stroke-width="1.5"/>
+
+  <!-- Header -->
+  <g transform="translate(30, 35)">
+    <circle cx="12" cy="12" r="12" fill="#a855f7" fill-opacity="0.2"/>
+    <path d="M12 6L16 10L12 14L8 10L12 6Z" fill="#c084fc"/>
+    <text x="36" y="17" class="m-title">GitHub Engineering Metrics</text>
+    <text x="740" y="17" text-anchor="end" class="m-sub">Shaheer-star</text>
+  </g>
+
+  <line x1="30" y1="55" x2="770" y2="55" stroke="#ffffff" stroke-opacity="0.08"/>
+
+  <!-- Left Column: Core Stats -->
+  <g transform="translate(30, 80)">
+    <text class="m-stat-title">SYSTEM OVERVIEW</text>
+
+    <!-- Stat Grid -->
+    <g transform="translate(0, 20)">
+      <!-- Row 1 -->
+      <g transform="translate(0, 0)">
+        <rect width="170" height="60" rx="8" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.05"/>
+        <text x="16" y="24" class="m-label">Repositories</text>
+        <text x="16" y="46" class="m-val">25+</text>
+      </g>
+      <g transform="translate(185, 0)">
+        <rect width="170" height="60" rx="8" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.05"/>
+        <text x="16" y="24" class="m-label">Total Stars</text>
+        <text x="16" y="46" class="m-val">150+</text>
+      </g>
+
+      <!-- Row 2 -->
+      <g transform="translate(0, 72)">
+        <rect width="170" height="60" rx="8" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.05"/>
+        <text x="16" y="24" class="m-label">Contributions</text>
+        <text x="16" y="46" class="m-val">1,200+</text>
+      </g>
+      <g transform="translate(185, 72)">
+        <rect width="170" height="60" rx="8" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.05"/>
+        <text x="16" y="24" class="m-label">Pull Requests</text>
+        <text x="16" y="46" class="m-val">80+</text>
+      </g>
+
+      <!-- Row 3 -->
+      <g transform="translate(0, 144)">
+        <rect width="170" height="60" rx="8" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.05"/>
+        <text x="16" y="24" class="m-label">Code Reviews</text>
+        <text x="16" y="46" class="m-val">45+</text>
+      </g>
+      <g transform="translate(185, 144)">
+        <rect width="170" height="60" rx="8" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.05"/>
+        <text x="16" y="24" class="m-label">Commit Streak</text>
+        <text x="16" y="46" class="m-val">Active ⚡</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Right Column: Language Distribution -->
+  <g transform="translate(420, 80)">
+    <text class="m-stat-title">LANGUAGE SPECTRUM</text>
+
+    <g transform="translate(0, 25)">
+      <!-- Python -->
+      <text x="0" y="15" class="m-label">Python</text>
+      <text x="350" y="15" text-anchor="end" class="m-val">45%</text>
+      <rect x="0" y="24" width="350" height="8" rx="4" fill="#ffffff" fill-opacity="0.05"/>
+      <rect x="0" y="24" width="157.5" height="8" rx="4" fill="url(#pyGrad)"/>
+
+      <!-- C++ / PyTorch -->
+      <text x="0" y="55" class="m-label">C++ / Machine Learning</text>
+      <text x="350" y="55" text-anchor="end" class="m-val">25%</text>
+      <rect x="0" y="64" width="350" height="8" rx="4" fill="#ffffff" fill-opacity="0.05"/>
+      <rect x="0" y="64" width="87.5" height="8" rx="4" fill="url(#cppGrad)"/>
+
+      <!-- JavaScript / React -->
+      <text x="0" y="95" class="m-label">JavaScript / Node.js</text>
+      <text x="350" y="95" text-anchor="end" class="m-val">18%</text>
+      <rect x="0" y="104" width="350" height="8" rx="4" fill="#ffffff" fill-opacity="0.05"/>
+      <rect x="0" y="104" width="63" height="8" rx="4" fill="url(#jsGrad)"/>
+
+      <!-- TypeScript / Next.js -->
+      <text x="0" y="135" class="m-label">TypeScript / Next.js</text>
+      <text x="350" y="135" text-anchor="end" class="m-val">12%</text>
+      <rect x="0" y="144" width="350" height="8" rx="4" fill="#ffffff" fill-opacity="0.05"/>
+      <rect x="0" y="144" width="42" height="8" rx="4" fill="url(#tsGrad)"/>
+    </g>
+
+    <!-- Achievements & Habits snippet -->
+    <g transform="translate(0, 200)">
+      <rect width="350" height="75" rx="8" fill="#ffffff" fill-opacity="0.03" stroke="#a855f7" stroke-opacity="0.2"/>
+      <text x="16" y="25" class="m-stat-title">SPECIALIZATIONS</text>
+      <text x="16" y="50" font-family="'Inter', sans-serif" font-size="13" fill="#e2e8f0">
+        🏆 Deep Learning • Computer Vision • FastAPI • Docker
+      </text>
+    </g>
+  </g>
+
+  <!-- Footer Banner inside SVG -->
+  <rect x="30" y="375" width="740" height="1" fill="#ffffff" fill-opacity="0.08"/>
+  <text x="400" y="398" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#64748b">
+    AUTO-UPDATED VIA GITHUB ACTIONS PIPELINE • LOWLIGHTER METRICS ENGINE
+  </text>
+</svg>

@@ -1,0 +1,71 @@
+<svg width="1200" height="140" viewBox="0 0 1200 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="footerBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#08070d"/>
+      <stop offset="50%" stop-color="#0f0c1b"/>
+      <stop offset="100%" stop-color="#050409"/>
+    </linearGradient>
+
+    <linearGradient id="waveGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.5"/>
+      <stop offset="50%" stop-color="#6366f1" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.5"/>
+    </linearGradient>
+
+    <linearGradient id="waveGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.2"/>
+      <stop offset="50%" stop-color="#ec4899" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="50%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;display=swap');
+      .footer-text {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        fill: #94a3b8;
+      }
+      .brand-text {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 13px;
+        font-weight: 700;
+        fill: #e9d5ff;
+      }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="140" fill="url(#footerBg)"/>
+
+  <!-- Top Accent Border Line -->
+  <rect x="0" y="0" width="1200" height="2" fill="url(#borderGrad)"/>
+
+  <!-- Glowing Wave Graphics -->
+  <path d="M 0 40 Q 300 10 600 40 T 1200 30 L 1200 0 L 0 0 Z" fill="url(#waveGrad2)"/>
+  <path d="M 0 50 Q 300 80 600 40 T 1200 60 L 1200 140 L 0 140 Z" fill="#08070d" fill-opacity="0.85"/>
+
+  <!-- Glowing Wave Path Border -->
+  <path d="M 0 45 Q 300 25 600 45 T 1200 35" fill="none" stroke="url(#waveGrad1)" stroke-width="2"/>
+
+  <!-- Footer Content -->
+  <g transform="translate(600, 95)" text-anchor="middle">
+    <text class="footer-text">
+      CRAFTED WITH PRECISION BY <tspan class="brand-text">SYED SHAHEER ABBAS</tspan> • AI &amp; SOFTWARE SYSTEMS
+    </text>
+  </g>
+
+  <!-- Terminal Style Status Line -->
+  <g transform="translate(600, 120)" text-anchor="middle">
+    <text font-family="'JetBrains Mono', monospace" font-size="11" fill="#64748b" letter-spacing="1">
+      ⚡ SYSTEM STATUS: ALL PIPELINES OPERATIONAL • 2026 ENTERPRISE SPEC
+    </text>
+  </g>
+</svg>
