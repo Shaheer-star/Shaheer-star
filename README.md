@@ -10,7 +10,7 @@
   <br/><br/>
 
   <!-- BADGES & METRICS COUNTERS -->
-  <a href="https://linkedin.com/in/syed-shaheer-abbas/">
+  <a href="https://www.linkedin.com/in/syed-shaheer-abbas/">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
   <a href="mailto:shaheerabbas414@gmail.com">
@@ -45,7 +45,7 @@
 <br/>
 
 <!-- ABOUT SECTION -->
-<h2><g-emoji class="g-emoji" alias="terminal">💻</g-emoji> About</h2>
+<h2>💻 About</h2>
 
 <div align="center">
   <table width="100%">
@@ -70,7 +70,7 @@
 <br/>
 
 <!-- TECH STACK SECTION -->
-<h2><g-emoji class="g-emoji" alias="gear">⚡</g-emoji> Tech Stack</h2>
+<h2>⚡ Tech Stack</h2>
 
 <div align="center">
   <a href="https://skillicons.dev">
@@ -81,7 +81,7 @@
 <br/>
 
 <!-- FEATURED PROJECTS SECTION -->
-<h2><g-emoji class="g-emoji" alias="rocket">🚀</g-emoji> Featured Projects</h2>
+<h2>🚀 Featured Projects</h2>
 
 <div align="center">
   <table width="100%">
@@ -161,17 +161,17 @@
 
 <br/>
 
-<!-- GITHUB METRICS SECTION -->
-<h2><g-emoji class="g-emoji" alias="bar_chart">📊</g-emoji> GitHub Metrics</h2>
+<!-- GITHUB METRICS SECTION (FULL LOWLIGHTER METRICS DASHBOARD) -->
+<h2>📊 GitHub Metrics</h2>
 
 <div align="center">
-  <img src="github-metrics.svg" alt="GitHub Engineering Metrics" width="100%" />
+  <img src="github-metrics.svg" alt="GitHub Engineering Metrics Dashboard" width="100%" />
 </div>
 
 <br/>
 
 <!-- GITHUB ANALYTICS SECTION -->
-<h2><g-emoji class="g-emoji" alias="chart_with_upwards_trend">📈</g-emoji> GitHub Analytics</h2>
+<h2>📈 GitHub Analytics</h2>
 
 <div align="center">
   <table border="0">
@@ -189,7 +189,7 @@
 <br/>
 
 <!-- CONTRIBUTION GRAPH SECTION -->
-<h2><g-emoji class="g-emoji" alias="calendar">📅</g-emoji> Contribution Graph</h2>
+<h2>📅 Contribution Graph</h2>
 
 <div align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=Shaheer-star&theme=react-dark&bg_color=0d0b18&color=c084fc&line=a855f7&point=38bdf8&area=true&hide_border=true" alt="Contribution Graph" width="100%" />
@@ -198,7 +198,7 @@
 <br/>
 
 <!-- SNAKE SECTION -->
-<h2><g-emoji class="g-emoji" alias="snake">🐍</g-emoji> Snake</h2>
+<h2>🐍 Snake</h2>
 
 <div align="center">
   <picture>
@@ -211,22 +211,22 @@
 <br/>
 
 <!-- CODING PROFILES SECTION -->
-<h2><g-emoji class="g-emoji" alias="trophy">🏆</g-emoji> Coding Profiles</h2>
+<h2>🏆 Coding Profiles</h2>
 
 <div align="center">
   <a href="https://leetcode.com/u/Shaheer-star/">
     <img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode" />
   </a>
   &nbsp;
-  <a href="https://www.kaggle.com/">
+  <a href="https://www.kaggle.com/Shaheer-star">
     <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" alt="Kaggle" />
   </a>
   &nbsp;
-  <a href="https://www.hackerrank.com/">
+  <a href="https://www.hackerrank.com/profile/Shaheer_star">
     <img src="https://img.shields.io/badge/HackerRank-2EC866?style=for-the-badge&logo=hackerrank&logoColor=white" alt="HackerRank" />
   </a>
   &nbsp;
-  <a href="https://www.geeksforgeeks.org/">
+  <a href="https://www.geeksforgeeks.org/user/shaheerstar/">
     <img src="https://img.shields.io/badge/GeeksforGeeks-298D46?style=for-the-badge&logo=geeksforgeeks&logoColor=white" alt="GeeksforGeeks" />
   </a>
 </div>
@@ -234,7 +234,7 @@
 <br/>
 
 <!-- CONNECT SECTION -->
-<h2><g-emoji class="g-emoji" alias="speech_balloon">💬</g-emoji> Connect</h2>
+<h2>💬 Connect</h2>
 
 <div align="center">
   <a href="mailto:shaheerabbas414@gmail.com">

@@ -10,7 +10,7 @@
   <br/><br/>
 
   <!-- BADGES & METRICS COUNTERS -->
-  <a href="https://linkedin.com/in/syed-shaheer-abbas/">
+  <a href="https://www.linkedin.com/in/syed-shaheer-abbas/">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
   <a href="mailto:shaheerabbas414@gmail.com">
@@ -161,11 +161,11 @@
 
 <br/>
 
-<!-- GITHUB METRICS SECTION -->
+<!-- GITHUB METRICS SECTION (FULL LOWLIGHTER METRICS DASHBOARD) -->
 <h2>📊 GitHub Metrics</h2>
 
 <div align="center">
-  <img src="../../github-metrics.svg" alt="GitHub Engineering Metrics" width="100%" />
+  <img src="../../github-metrics.svg" alt="GitHub Engineering Metrics Dashboard" width="100%" />
 </div>
 
 <br/>
@@ -218,15 +218,15 @@
     <img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode" />
   </a>
   &nbsp;
-  <a href="https://www.kaggle.com/">
+  <a href="https://www.kaggle.com/Shaheer-star">
     <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" alt="Kaggle" />
   </a>
   &nbsp;
-  <a href="https://www.hackerrank.com/">
+  <a href="https://www.hackerrank.com/profile/Shaheer_star">
     <img src="https://img.shields.io/badge/HackerRank-2EC866?style=for-the-badge&logo=hackerrank&logoColor=white" alt="HackerRank" />
   </a>
   &nbsp;
-  <a href="https://www.geeksforgeeks.org/">
+  <a href="https://www.geeksforgeeks.org/user/shaheerstar/">
     <img src="https://img.shields.io/badge/GeeksforGeeks-298D46?style=for-the-badge&logo=geeksforgeeks&logoColor=white" alt="GeeksforGeeks" />
   </a>
 </div>

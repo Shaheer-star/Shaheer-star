@@ -1,139 +1,349 @@
-<svg width="800" height="420" viewBox="0 0 800 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1200" height="680" viewBox="0 0 1200 680" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="mBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0c0a15"/>
-      <stop offset="100%" stop-color="#120e24"/>
+    <linearGradient id="llBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090a0f"/>
+      <stop offset="50%" stop-color="#0d0e17"/>
+      <stop offset="100%" stop-color="#050508"/>
     </linearGradient>
-    <linearGradient id="mBorder" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.5"/>
-      <stop offset="100%" stop-color="#6366f1" stop-opacity="0.2"/>
+
+    <linearGradient id="llCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.01"/>
     </linearGradient>
-    <linearGradient id="pyGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#3b82f6"/>
-      <stop offset="100%" stop-color="#60a5fa"/>
-    </linearGradient>
-    <linearGradient id="cppGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#ec4899"/>
-      <stop offset="100%" stop-color="#f472b6"/>
-    </linearGradient>
-    <linearGradient id="jsGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#eab308"/>
-      <stop offset="100%" stop-color="#fde047"/>
-    </linearGradient>
-    <linearGradient id="tsGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+
+    <linearGradient id="purpleGlow" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#a855f7"/>
-      <stop offset="100%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#6366f1"/>
     </linearGradient>
+
+    <linearGradient id="cyanGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+
+    <linearGradient id="greenGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+
+    <!-- Gauge Gradients -->
+    <linearGradient id="gaugeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+
+    <!-- Language Colors -->
+    <linearGradient id="pyCol" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#3572A5"/><stop offset="100%" stop-color="#4B8BBE"/></linearGradient>
+    <linearGradient id="cppCol" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#f34b7d"/><stop offset="100%" stop-color="#ff7597"/></linearGradient>
+    <linearGradient id="jsCol" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#f1e05a"/><stop offset="100%" stop-color="#fef08a"/></linearGradient>
+    <linearGradient id="tsCol" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#3178c6"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=JetBrains+Mono:wght@500;700&amp;display=swap');
-      .m-title { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 18px; fill: #f3e8ff; }
-      .m-sub { font-family: 'JetBrains Mono', monospace; font-size: 12px; fill: #a855f7; letter-spacing: 1px; }
-      .m-label { font-family: 'Inter', sans-serif; font-size: 13px; fill: #94a3b8; }
-      .m-val { font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 15px; fill: #f8fafc; }
-      .m-stat-title { font-family: 'JetBrains Mono', monospace; font-size: 11px; fill: #64748b; letter-spacing: 1px; }
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap');
+      .header-name { font-family: 'Inter', sans-serif; font-weight: 800; font-size: 24px; fill: #f8fafc; }
+      .header-user { font-family: 'JetBrains Mono', monospace; font-size: 14px; fill: #a855f7; }
+      .section-title { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 13px; fill: #38bdf8; letter-spacing: 1px; }
+      .info-label { font-family: 'Inter', sans-serif; font-size: 12px; fill: #94a3b8; }
+      .info-val { font-family: 'JetBrains Mono', monospace; font-weight: 600; font-size: 12px; fill: #e2e8f0; }
+      .gauge-num { font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 15px; fill: #34d399; }
+      .gauge-sub { font-family: 'Inter', sans-serif; font-size: 10px; fill: #64748b; }
+      .tech-badge { font-family: 'JetBrains Mono', monospace; font-size: 11px; fill: #c084fc; }
     </style>
   </defs>
 
-  <!-- Card Background -->
-  <rect width="800" height="420" rx="16" fill="url(#mBg)" stroke="url(#mBorder)" stroke-width="1.5"/>
+  <!-- Outer Dashboard Frame -->
+  <rect width="1200" height="680" rx="16" fill="url(#llBg)" stroke="#7c3aed" stroke-opacity="0.3" stroke-width="1.5"/>
 
-  <!-- Header -->
-  <g transform="translate(30, 35)">
-    <circle cx="12" cy="12" r="12" fill="#a855f7" fill-opacity="0.2"/>
-    <path d="M12 6L16 10L12 14L8 10L12 6Z" fill="#c084fc"/>
-    <text x="36" y="17" class="m-title">GitHub Engineering Metrics</text>
-    <text x="740" y="17" text-anchor="end" class="m-sub">Shaheer-star</text>
-  </g>
+  <!-- Top GitHub Header Bar -->
+  <rect x="0" y="0" width="1200" height="45" rx="16" fill="#0d0b18" fill-opacity="0.8"/>
+  <rect x="0" y="44" width="1200" height="1" fill="#ffffff" fill-opacity="0.08"/>
+  <path d="M 25 15 C 20 15 16 19 16 24 C 16 28.1 18.7 31.5 22.4 32.7 C 22.8 32.8 23 32.5 23 32.3 L 23 30.5 C 20.3 31.1 19.7 29.2 19.7 29.2 C 19.3 28.1 18.6 27.8 18.6 27.8 C 17.7 27.2 18.7 27.2 18.7 27.2 C 19.7 27.3 20.2 28.3 20.2 28.3 C 21.1 29.8 22.5 29.4 23.1 29.1 C 23.2 28.4 23.5 27.9 23.8 27.6 C 21.6 27.4 19.3 26.5 19.3 22.6 C 19.3 21.5 19.7 20.6 20.3 19.9 C 20.2 19.6 19.9 18.5 20.4 17.1 C 20.4 17.1 21.3 16.8 23.3 18.1 C 24.1 17.9 25 17.8 25.8 17.8 C 26.6 17.8 27.5 17.9 28.3 18.1 C 30.3 16.8 31.2 17.1 31.2 17.1 C 31.7 18.5 31.4 19.6 31.3 19.9 C 31.9 20.6 32.3 21.5 32.3 22.6 C 32.3 26.5 30 27.4 27.8 27.6 C 28.2 28 28.5 28.7 28.5 29.8 L 28.5 32.3 C 28.5 32.5 28.7 32.8 29.1 32.7 C 32.8 31.5 35.5 28.1 35.5 24 C 35.5 19 31.5 15 25 15 Z" fill="#f8fafc"/>
+  <text x="50" y="27" font-family="'Inter', sans-serif" font-weight="600" font-size="14" fill="#f8fafc">GitHub Metrics Engine</text>
+  <text x="1175" y="27" text-anchor="end" font-family="'JetBrains Mono', monospace" font-size="12" fill="#a855f7">lowlighter/metrics</text>
 
-  <line x1="30" y1="55" x2="770" y2="55" stroke="#ffffff" stroke-opacity="0.08"/>
+  <!-- LEFT COLUMN: Profile Info & Stats -->
+  <g transform="translate(30, 70)">
+    <!-- Avatar / Node Visual -->
+    <g transform="translate(0, 0)">
+      <circle cx="45" cy="45" r="42" fill="url(#llCard)" stroke="#a855f7" stroke-width="2"/>
+      <circle cx="45" cy="45" r="35" fill="#1e1b4b"/>
+      <!-- Abstract AI Brain Vector Icon -->
+      <path d="M 45 25 L 57 32 L 57 48 L 45 55 L 33 48 L 33 32 Z" fill="none" stroke="#c084fc" stroke-width="2"/>
+      <circle cx="45" cy="25" r="3" fill="#38bdf8"/>
+      <circle cx="57" cy="32" r="3" fill="#a855f7"/>
+      <circle cx="57" cy="48" r="3" fill="#34d399"/>
+      <circle cx="45" cy="55" r="3" fill="#38bdf8"/>
+      <circle cx="33" cy="48" r="3" fill="#a855f7"/>
+      <circle cx="33" cy="32" r="3" fill="#34d399"/>
+      <circle cx="45" cy="40" r="4" fill="#ffffff"/>
+    </g>
 
-  <!-- Left Column: Core Stats -->
-  <g transform="translate(30, 80)">
-    <text class="m-stat-title">SYSTEM OVERVIEW</text>
+    <!-- User Header Text -->
+    <g transform="translate(105, 25)">
+      <text class="header-name">Syed Shaheer Abbas</text>
+      <text y="24" class="header-user">@Shaheer-star • AI Engineer</text>
+    </g>
 
-    <!-- Stat Grid -->
-    <g transform="translate(0, 20)">
-      <!-- Row 1 -->
-      <g transform="translate(0, 0)">
-        <rect width="170" height="60" rx="8" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.05"/>
-        <text x="16" y="24" class="m-label">Repositories</text>
-        <text x="16" y="46" class="m-val">25+</text>
+    <!-- Details List -->
+    <g transform="translate(0, 110)">
+      <rect width="320" height="230" rx="10" fill="url(#llCard)" stroke="#ffffff" stroke-opacity="0.05"/>
+      <g transform="translate(16, 25)">
+        <text class="info-label">📅 Joined GitHub</text><text x="288" text-anchor="end" class="info-val">Active Contributor</text>
+        <line x1="0" y1="12" x2="288" y2="12" stroke="#ffffff" stroke-opacity="0.05"/>
+
+        <g transform="translate(0, 28)">
+          <text class="info-label">📍 Location</text><text x="288" text-anchor="end" class="info-val">Pakistan</text>
+          <line x1="0" y1="12" x2="288" y2="12" stroke="#ffffff" stroke-opacity="0.05"/>
+        </g>
+        <g transform="translate(0, 56)">
+          <text class="info-label">📦 Repositories</text><text x="288" text-anchor="end" class="info-val">25+ Public</text>
+          <line x1="0" y1="12" x2="288" y2="12" stroke="#ffffff" stroke-opacity="0.05"/>
+        </g>
+        <g transform="translate(0, 84)">
+          <text class="info-label">⭐ Total Stars</text><text x="288" text-anchor="end" class="info-val">150+ Earned</text>
+          <line x1="0" y1="12" x2="288" y2="12" stroke="#ffffff" stroke-opacity="0.05"/>
+        </g>
+        <g transform="translate(0, 112)">
+          <text class="info-label">👥 Followers</text><text x="288" text-anchor="end" class="info-val">Growing Network</text>
+          <line x1="0" y1="12" x2="288" y2="12" stroke="#ffffff" stroke-opacity="0.05"/>
+        </g>
+        <g transform="translate(0, 140)">
+          <text class="info-label">📊 Lines of Code</text><text x="288" text-anchor="end" class="info-val" fill="#34d399">+1.52M / -379K</text>
+          <line x1="0" y1="12" x2="288" y2="12" stroke="#ffffff" stroke-opacity="0.05"/>
+        </g>
+        <g transform="translate(0, 168)">
+          <text class="info-label">🏆 Specialization</text><text x="288" text-anchor="end" class="info-val" fill="#c084fc">AI &amp; Full Stack</text>
+        </g>
       </g>
-      <g transform="translate(185, 0)">
-        <rect width="170" height="60" rx="8" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.05"/>
-        <text x="16" y="24" class="m-label">Total Stars</text>
-        <text x="16" y="46" class="m-val">150+</text>
-      </g>
+    </g>
 
-      <!-- Row 2 -->
-      <g transform="translate(0, 72)">
-        <rect width="170" height="60" rx="8" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.05"/>
-        <text x="16" y="24" class="m-label">Contributions</text>
-        <text x="16" y="46" class="m-val">1,200+</text>
-      </g>
-      <g transform="translate(185, 72)">
-        <rect width="170" height="60" rx="8" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.05"/>
-        <text x="16" y="24" class="m-label">Pull Requests</text>
-        <text x="16" y="46" class="m-val">80+</text>
-      </g>
+    <!-- Mastered Technologies Grid -->
+    <g transform="translate(0, 360)">
+      <text class="section-title">⚡ MASTERED TECHNOLOGIES &amp; TOPICS</text>
+      <g transform="translate(0, 15)">
+        <rect width="320" height="190" rx="10" fill="url(#llCard)" stroke="#ffffff" stroke-opacity="0.05"/>
+        <g transform="translate(15, 20)">
+          <!-- Row 1 -->
+          <rect x="0" y="0" width="85" height="28" rx="6" fill="#1e1b4b" stroke="#6366f1" stroke-opacity="0.4"/><text x="42.5" y="18" text-anchor="middle" class="tech-badge">Python</text>
+          <rect x="95" y="0" width="85" height="28" rx="6" fill="#2e1065" stroke="#a855f7" stroke-opacity="0.4"/><text x="137.5" y="18" text-anchor="middle" class="tech-badge">PyTorch</text>
+          <rect x="190" y="0" width="100" height="28" rx="6" fill="#030712" stroke="#38bdf8" stroke-opacity="0.4"/><text x="240" y="18" text-anchor="middle" class="tech-badge">TensorFlow</text>
 
-      <!-- Row 3 -->
-      <g transform="translate(0, 144)">
-        <rect width="170" height="60" rx="8" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.05"/>
-        <text x="16" y="24" class="m-label">Code Reviews</text>
-        <text x="16" y="46" class="m-val">45+</text>
-      </g>
-      <g transform="translate(185, 144)">
-        <rect width="170" height="60" rx="8" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.05"/>
-        <text x="16" y="24" class="m-label">Commit Streak</text>
-        <text x="16" y="46" class="m-val">Active ⚡</text>
+          <!-- Row 2 -->
+          <rect x="0" y="40" width="85" height="28" rx="6" fill="#064e3b" stroke="#10b981" stroke-opacity="0.4"/><text x="42.5" y="58" text-anchor="middle" class="tech-badge">FastAPI</text>
+          <rect x="95" y="40" width="85" height="28" rx="6" fill="#1e1b4b" stroke="#6366f1" stroke-opacity="0.4"/><text x="137.5" y="58" text-anchor="middle" class="tech-badge">OpenCV</text>
+          <rect x="190" y="40" width="100" height="28" rx="6" fill="#18181b" stroke="#ec4899" stroke-opacity="0.4"/><text x="240" y="58" text-anchor="middle" class="tech-badge">Docker</text>
+
+          <!-- Row 3 -->
+          <rect x="0" y="80" width="85" height="28" rx="6" fill="#2e1065" stroke="#a855f7" stroke-opacity="0.4"/><text x="42.5" y="98" text-anchor="middle" class="tech-badge">React</text>
+          <rect x="95" y="80" width="85" height="28" rx="6" fill="#030712" stroke="#38bdf8" stroke-opacity="0.4"/><text x="137.5" y="98" text-anchor="middle" class="tech-badge">Next.js</text>
+          <rect x="190" y="80" width="100" height="28" rx="6" fill="#1e1b4b" stroke="#6366f1" stroke-opacity="0.4"/><text x="240" y="98" text-anchor="middle" class="tech-badge">Node.js</text>
+
+          <!-- Row 4 -->
+          <rect x="0" y="120" width="85" height="28" rx="6" fill="#18181b" stroke="#ec4899" stroke-opacity="0.4"/><text x="42.5" y="138" text-anchor="middle" class="tech-badge">C++</text>
+          <rect x="95" y="120" width="85" height="28" rx="6" fill="#064e3b" stroke="#10b981" stroke-opacity="0.4"/><text x="137.5" y="138" text-anchor="middle" class="tech-badge">PostgreSQL</text>
+          <rect x="190" y="120" width="100" height="28" rx="6" fill="#2e1065" stroke="#a855f7" stroke-opacity="0.4"/><text x="240" y="138" text-anchor="middle" class="tech-badge">MongoDB</text>
+        </g>
       </g>
     </g>
   </g>
 
-  <!-- Right Column: Language Distribution -->
-  <g transform="translate(420, 80)">
-    <text class="m-stat-title">LANGUAGE SPECTRUM</text>
+  <!-- RIGHT COLUMN: Engineering Dashboard -->
+  <g transform="translate(380, 70)">
 
-    <g transform="translate(0, 25)">
-      <!-- Python -->
-      <text x="0" y="15" class="m-label">Python</text>
-      <text x="350" y="15" text-anchor="end" class="m-val">45%</text>
-      <rect x="0" y="24" width="350" height="8" rx="4" fill="#ffffff" fill-opacity="0.05"/>
-      <rect x="0" y="24" width="157.5" height="8" rx="4" fill="url(#pyGrad)"/>
+    <!-- TOP SECTION: PageSpeed / Engineering Quality Gauges -->
+    <g transform="translate(0, 0)">
+      <text class="section-title">🚀 PAGESPEED &amp; ENGINEERING INSIGHTS</text>
+      <g transform="translate(0, 15)">
+        <rect width="790" height="110" rx="10" fill="url(#llCard)" stroke="#ffffff" stroke-opacity="0.05"/>
+        
+        <!-- Gauge 1: Performance -->
+        <g transform="translate(70, 55)">
+          <circle cx="0" cy="0" r="32" fill="none" stroke="#ffffff" stroke-opacity="0.1" stroke-width="6"/>
+          <circle cx="0" cy="0" r="32" fill="none" stroke="url(#gaugeGrad)" stroke-width="6" stroke-dasharray="201" stroke-dashoffset="8"/>
+          <text text-anchor="middle" y="5" class="gauge-num">98</text>
+          <text text-anchor="middle" y="48" class="gauge-sub">PERFORMANCE</text>
+        </g>
 
-      <!-- C++ / PyTorch -->
-      <text x="0" y="55" class="m-label">C++ / Machine Learning</text>
-      <text x="350" y="55" text-anchor="end" class="m-val">25%</text>
-      <rect x="0" y="64" width="350" height="8" rx="4" fill="#ffffff" fill-opacity="0.05"/>
-      <rect x="0" y="64" width="87.5" height="8" rx="4" fill="url(#cppGrad)"/>
+        <!-- Gauge 2: AI Systems -->
+        <g transform="translate(260, 55)">
+          <circle cx="0" cy="0" r="32" fill="none" stroke="#ffffff" stroke-opacity="0.1" stroke-width="6"/>
+          <circle cx="0" cy="0" r="32" fill="none" stroke="url(#purpleGlow)" stroke-width="6" stroke-dasharray="201" stroke-dashoffset="0"/>
+          <text text-anchor="middle" y="5" class="gauge-num" fill="#c084fc">100</text>
+          <text text-anchor="middle" y="48" class="gauge-sub">AI SYSTEMS</text>
+        </g>
 
-      <!-- JavaScript / React -->
-      <text x="0" y="95" class="m-label">JavaScript / Node.js</text>
-      <text x="350" y="95" text-anchor="end" class="m-val">18%</text>
-      <rect x="0" y="104" width="350" height="8" rx="4" fill="#ffffff" fill-opacity="0.05"/>
-      <rect x="0" y="104" width="63" height="8" rx="4" fill="url(#jsGrad)"/>
+        <!-- Gauge 3: Code Quality -->
+        <g transform="translate(450, 55)">
+          <circle cx="0" cy="0" r="32" fill="none" stroke="#ffffff" stroke-opacity="0.1" stroke-width="6"/>
+          <circle cx="0" cy="0" r="32" fill="none" stroke="url(#cyanGlow)" stroke-width="6" stroke-dasharray="201" stroke-dashoffset="0"/>
+          <text text-anchor="middle" y="5" class="gauge-num" fill="#38bdf8">100</text>
+          <text text-anchor="middle" y="48" class="gauge-sub">CODE QUALITY</text>
+        </g>
 
-      <!-- TypeScript / Next.js -->
-      <text x="0" y="135" class="m-label">TypeScript / Next.js</text>
-      <text x="350" y="135" text-anchor="end" class="m-val">12%</text>
-      <rect x="0" y="144" width="350" height="8" rx="4" fill="#ffffff" fill-opacity="0.05"/>
-      <rect x="0" y="144" width="42" height="8" rx="4" fill="url(#tsGrad)"/>
+        <!-- Gauge 4: Best Practices -->
+        <g transform="translate(640, 55)">
+          <circle cx="0" cy="0" r="32" fill="none" stroke="#ffffff" stroke-opacity="0.1" stroke-width="6"/>
+          <circle cx="0" cy="0" r="32" fill="none" stroke="url(#greenGlow)" stroke-width="6" stroke-dasharray="201" stroke-dashoffset="0"/>
+          <text text-anchor="middle" y="5" class="gauge-num" fill="#34d399">100</text>
+          <text text-anchor="middle" y="48" class="gauge-sub">BEST PRACTICES</text>
+        </g>
+      </g>
     </g>
 
-    <!-- Achievements & Habits snippet -->
-    <g transform="translate(0, 200)">
-      <rect width="350" height="75" rx="8" fill="#ffffff" fill-opacity="0.03" stroke="#a855f7" stroke-opacity="0.2"/>
-      <text x="16" y="25" class="m-stat-title">SPECIALIZATIONS</text>
-      <text x="16" y="50" font-family="'Inter', sans-serif" font-size="13" fill="#e2e8f0">
-        🏆 Deep Learning • Computer Vision • FastAPI • Docker
-      </text>
+    <!-- MIDDLE SECTION: 3D Isometric Contributions Calendar Visual -->
+    <g transform="translate(0, 155)">
+      <text class="section-title">📅 ISOMETRIC CONTRIBUTIONS CALENDAR</text>
+      <g transform="translate(0, 15)">
+        <rect width="790" height="150" rx="10" fill="url(#llCard)" stroke="#ffffff" stroke-opacity="0.05"/>
+        
+        <!-- Render Isometric 3D Grid Blocks -->
+        <g transform="translate(100, 30)">
+          <!-- Isometric Grid Perspective Lines & Columns -->
+          <g transform="skewX(-45) scale(1, 0.5)">
+            <!-- Grid Rows & 3D Blocks -->
+            <!-- Layer 1 -->
+            <rect x="50" y="20" width="14" height="14" fill="#2e1065" rx="2"/>
+            <rect x="70" y="20" width="14" height="14" fill="#581c87" rx="2"/>
+            <rect x="90" y="20" width="14" height="14" fill="#7e22ce" rx="2"/>
+            <rect x="110" y="20" width="14" height="14" fill="#a855f7" rx="2"/>
+            <rect x="130" y="20" width="14" height="14" fill="#c084fc" rx="2"/>
+
+            <!-- Layer 2 -->
+            <rect x="50" y="40" width="14" height="14" fill="#7e22ce" rx="2"/>
+            <rect x="70" y="40" width="14" height="14" fill="#a855f7" rx="2"/>
+            <rect x="90" y="40" width="14" height="14" fill="#c084fc" rx="2"/>
+            <rect x="110" y="40" width="14" height="14" fill="#e9d5ff" rx="2"/>
+            <rect x="130" y="40" width="14" height="14" fill="#a855f7" rx="2"/>
+
+            <!-- Layer 3 -->
+            <rect x="170" y="20" width="14" height="14" fill="#10b981" rx="2"/>
+            <rect x="190" y="20" width="14" height="14" fill="#34d399" rx="2"/>
+            <rect x="210" y="20" width="14" height="14" fill="#a855f7" rx="2"/>
+            <rect x="230" y="20" width="14" height="14" fill="#c084fc" rx="2"/>
+            
+            <rect x="170" y="40" width="14" height="14" fill="#38bdf8" rx="2"/>
+            <rect x="190" y="40" width="14" height="14" fill="#60a5fa" rx="2"/>
+            <rect x="210" y="40" width="14" height="14" fill="#a855f7" rx="2"/>
+            <rect x="230" y="40" width="14" height="14" fill="#e9d5ff" rx="2"/>
+
+            <!-- Layer 4 -->
+            <rect x="270" y="20" width="14" height="14" fill="#581c87" rx="2"/>
+            <rect x="290" y="20" width="14" height="14" fill="#7e22ce" rx="2"/>
+            <rect x="310" y="20" width="14" height="14" fill="#a855f7" rx="2"/>
+            <rect x="330" y="20" width="14" height="14" fill="#c084fc" rx="2"/>
+            <rect x="350" y="20" width="14" height="14" fill="#10b981" rx="2"/>
+            
+            <rect x="270" y="40" width="14" height="14" fill="#7e22ce" rx="2"/>
+            <rect x="290" y="40" width="14" height="14" fill="#a855f7" rx="2"/>
+            <rect x="310" y="40" width="14" height="14" fill="#c084fc" rx="2"/>
+            <rect x="330" y="40" width="14" height="14" fill="#38bdf8" rx="2"/>
+            <rect x="350" y="40" width="14" height="14" fill="#34d399" rx="2"/>
+
+            <!-- Layer 5 -->
+            <rect x="390" y="20" width="14" height="14" fill="#a855f7" rx="2"/>
+            <rect x="410" y="20" width="14" height="14" fill="#c084fc" rx="2"/>
+            <rect x="430" y="20" width="14" height="14" fill="#e9d5ff" rx="2"/>
+            <rect x="450" y="20" width="14" height="14" fill="#38bdf8" rx="2"/>
+            
+            <rect x="390" y="40" width="14" height="14" fill="#c084fc" rx="2"/>
+            <rect x="410" y="40" width="14" height="14" fill="#a855f7" rx="2"/>
+            <rect x="430" y="40" width="14" height="14" fill="#7e22ce" rx="2"/>
+            <rect x="450" y="40" width="14" height="14" fill="#10b981" rx="2"/>
+          </g>
+        </g>
+
+        <!-- Stats Legend Overlay -->
+        <g transform="translate(560, 25)">
+          <text font-family="'JetBrains Mono', monospace" font-size="12" fill="#34d399" font-weight="700">🔥 Current Streak: Active</text>
+          <text y="22" font-family="'Inter', sans-serif" font-size="11" fill="#94a3b8">⚡ ~12.5 commits per active day</text>
+          <text y="44" font-family="'Inter', sans-serif" font-size="11" fill="#94a3b8">📈 Continuous Integration &amp; Deployment</text>
+        </g>
+      </g>
     </g>
+
+    <!-- LOWER SECTION: Coding Habits & Activity Bars -->
+    <g transform="translate(0, 335)">
+      <text class="section-title">📊 CODING HABITS &amp; COMMIT ACTIVITY</text>
+      <g transform="translate(0, 15)">
+        <rect width="385" height="215" rx="10" fill="url(#llCard)" stroke="#ffffff" stroke-opacity="0.05"/>
+        <g transform="translate(15, 25)">
+          <text font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#e2e8f0">Commit activity per time of day</text>
+          
+          <!-- Activity Bars 24h -->
+          <g transform="translate(10, 130) scale(1, -1)">
+            <rect x="0" y="0" width="8" height="20" rx="2" fill="#581c87"/>
+            <rect x="12" y="0" width="8" height="12" rx="2" fill="#581c87"/>
+            <rect x="24" y="0" width="8" height="8" rx="2" fill="#581c87"/>
+            <rect x="36" y="0" width="8" height="5" rx="2" fill="#581c87"/>
+            <rect x="48" y="0" width="8" height="15" rx="2" fill="#7e22ce"/>
+            <rect x="60" y="0" width="8" height="35" rx="2" fill="#a855f7"/>
+            <rect x="72" y="0" width="8" height="60" rx="2" fill="#c084fc"/>
+            <rect x="84" y="0" width="8" height="85" rx="2" fill="#38bdf8"/>
+            <rect x="96" y="0" width="8" height="70" rx="2" fill="#a855f7"/>
+            <rect x="108" y="0" width="8" height="95" rx="2" fill="#34d399"/>
+            <rect x="120" y="0" width="8" height="100" rx="2" fill="#34d399"/>
+            <rect x="132" y="0" width="8" height="80" rx="2" fill="#c084fc"/>
+            <rect x="144" y="0" width="8" height="65" rx="2" fill="#a855f7"/>
+            <rect x="156" y="0" width="8" height="40" rx="2" fill="#7e22ce"/>
+            <rect x="168" y="0" width="8" height="25" rx="2" fill="#581c87"/>
+            <rect x="180" y="0" width="8" height="50" rx="2" fill="#a855f7"/>
+            <rect x="192" y="0" width="8" height="75" rx="2" fill="#c084fc"/>
+            <rect x="204" y="0" width="8" height="90" rx="2" fill="#38bdf8"/>
+            <rect x="216" y="0" width="8" height="65" rx="2" fill="#a855f7"/>
+            <rect x="228" y="0" width="8" height="30" rx="2" fill="#581c87"/>
+          </g>
+
+          <g transform="translate(10, 145)">
+            <text font-family="'JetBrains Mono', monospace" font-size="10" fill="#64748b">00h  04h  08h  12h  16h  20h  23h</text>
+          </g>
+        </g>
+      </g>
+
+      <!-- Language Activity Breakdown -->
+      <g transform="translate(405, 15)">
+        <rect width="385" height="215" rx="10" fill="url(#llCard)" stroke="#ffffff" stroke-opacity="0.05"/>
+        <g transform="translate(15, 25)">
+          <text font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#e2e8f0">Most Used Languages</text>
+
+          <!-- Stacked Language Bar -->
+          <g transform="translate(0, 20)">
+            <rect x="0" y="0" width="355" height="12" rx="6" fill="#ffffff" fill-opacity="0.05"/>
+            <rect x="0" y="0" width="160" height="12" rx="6" fill="url(#pyCol)"/>
+            <rect x="160" y="0" width="90" height="12" fill="url(#cppCol)"/>
+            <rect x="250" y="0" width="60" height="12" fill="url(#jsCol)"/>
+            <rect x="310" y="0" width="45" height="12" rx="6" fill="url(#tsCol)"/>
+          </g>
+
+          <!-- Language Legend Grid -->
+          <g transform="translate(0, 50)">
+            <circle cx="6" cy="6" r="5" fill="#3572A5"/>
+            <text x="18" y="10" font-family="'Inter', sans-serif" font-size="12" fill="#cbd5e1">Python (45%)</text>
+
+            <circle cx="180" cy="6" r="5" fill="#f34b7d"/>
+            <text x="192" y="10" font-family="'Inter', sans-serif" font-size="12" fill="#cbd5e1">C++ (25%)</text>
+
+            <circle cx="6" cy="36" r="5" fill="#f1e05a"/>
+            <text x="18" y="40" font-family="'Inter', sans-serif" font-size="12" fill="#cbd5e1">JavaScript (18%)</text>
+
+            <circle cx="180" cy="36" r="5" fill="#3178c6"/>
+            <text x="192" y="40" font-family="'Inter', sans-serif" font-size="12" fill="#cbd5e1">TypeScript (12%)</text>
+          </g>
+
+          <!-- Active Project Roadmap -->
+          <g transform="translate(0, 115)">
+            <text font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#38bdf8" letter-spacing="1">📌 ACTIVE ENGINEERING ROADMAP</text>
+            <text y="20" font-family="'Inter', sans-serif" font-size="12" fill="#94a3b8">✔ AgriVision Pro • Vision Pipeline v2.0</text>
+            <text y="40" font-family="'Inter', sans-serif" font-size="12" fill="#94a3b8">⚡ SupplySync • Predictive ML Model Deployment</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
   </g>
 
-  <!-- Footer Banner inside SVG -->
-  <rect x="30" y="375" width="740" height="1" fill="#ffffff" fill-opacity="0.08"/>
-  <text x="400" y="398" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#64748b">
-    AUTO-UPDATED VIA GITHUB ACTIONS PIPELINE • LOWLIGHTER METRICS ENGINE
+  <!-- Bottom Dashboard Footer -->
+  <line x1="30" y1="645" x2="1170" y2="645" stroke="#ffffff" stroke-opacity="0.08"/>
+  <text x="600" y="665" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#64748b">
+    LOWLIGHTER METRICS ENGINE • FULL DASHBOARD SPEC • SYED SHAHEER ABBAS
   </text>
 </svg>
